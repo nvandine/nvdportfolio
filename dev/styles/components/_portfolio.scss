@@ -1,0 +1,73 @@
+.portfolio {
+    @include flexCol;
+    margin: 30px 0;
+}    
+
+h2 {
+    padding: 30px 0;
+    text-shadow: -3px 0px 3px $accent2,
+    3px 0px 3px $accent2,
+    6px 0px 6px $accent2,
+    -6px 0px 6px $accent2;
+}
+
+h2:after {
+    margin-top: 10px;
+    border-bottom: 1px solid $primary;
+    content: '';
+    display: block;
+    width: 100%;
+}
+.gallery {
+    @include flex;
+    flex-wrap: wrap;
+}
+
+.appImg {
+    padding: 30px;
+    width: 58%;
+    // border: 3px solid $accent3;
+    // background-color: $accent4;
+    object-fit: cover;
+}
+
+.appText {
+    margin: 30px 0;
+    width: 41%;
+    background-color: $accent1;
+    border: 1px solid $tertiary;
+    padding: 30px 40px;
+    h3 {
+        margin-top: 10px;
+    }
+    h3:after {
+        margin-top: 10px;
+        border-bottom: 1px solid $primary;
+        content: '';
+        display: block;
+        width: 50%;
+    }
+    .appDesc {
+        margin-top: 30px;
+        color: $secondary;
+        line-height: 1.5;
+    }
+    .appSkills {
+        margin: 30px 0 15px;
+        color: $tertiary;
+    }
+    .portfolioLinks  {
+        display: flex;
+        p {
+            padding: 8px;
+            width: auto;
+            background-color: $quaternary;
+            border-radius: 5px;
+            margin-right: 15px;
+            box-shadow: 3px 3px 3px $secondary;
+            a {
+                color: $accent1;
+            }
+        }
+    }
+}

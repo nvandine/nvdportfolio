@@ -1,5 +1,13 @@
 "use strict";
 
-var ohHey = "Hello World";
+var app = {};
 
-console.log(ohHey);
+app.events = function () {};
+
+app.init = function () {
+    app.events();
+};
+
+$(function () {
+    app.init();
+});

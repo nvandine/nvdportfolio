@@ -1,0 +1,61 @@
+header {
+    // linear-gradient(to left, rgba(249, 252, 93, 0.2), rgba(56, 248, 239, 0.2))
+    background-image: url("../../assets/iceberg.png");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.headerOverlay {
+    // background-image: linear-gradient(to right, rgba(249, 252, 93, 0.3), rgba(56, 248, 239, 0.3));
+    background-image: linear-gradient(to right, rgba(254, 247, 148, 0.3), rgba(225, 247, 250, 0.3));
+}
+
+.headerTop {
+    @include flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    img {
+        width: 100px;
+        margin: 20px 0 15px 0;
+    }
+    nav ul {
+        @include flex;
+        // border: 1px solid red;
+        li {
+            margin: 10px 30px;
+            @include hover {
+                border-top: 1px solid $primary;
+                content: '';
+                display: block;
+                text-shadow : -3px 0px 3px $accent2,
+                3px 0px 3px $accent2,
+                6px 0px 6px $accent2,
+                -6px 0px 6px $accent2;
+            }
+        }
+    }
+}
+
+.headerText {
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+    h3 {
+        padding: 100px 0 5px 0;
+    }
+    h1 {
+        padding: 15px 0 20px 0;
+    }
+    p {
+        padding: 12px 0;
+        color: $secondary;
+        text-shadow: -3px 0px 3px $accent2,
+        3px 0px 3px $accent2,
+        6px 0px 6px $accent2,
+        -6px 0px 6px $accent2
+    }
+}

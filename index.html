@@ -1,17 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Natalie Van Dine | Web Developer</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+	<link rel="shortcut icon" href="/assets/nvdicon.png" type="image/x-icon">
 	<link rel="stylesheet" href="./public/styles/style.css">
 </head>
+
 <body>
+	<!-- HEADER SECTION BEGINS -->
+	<!-- Skip to main on first link? -->
+	<header>
+		<div class="headerOverlay">
+			<div class="headerTop wrapper">
+				<img src="assets/nvdlogo.png" alt="NVD logo">
+				<nav class="headerNav">
+					<ul>
+						<li>
+							<a href="">home</a>
+						</li>
+						<li>
+							<a href="">portfolio</a>
+						</li>
+						<li>
+							<a href="">about</a>
+						</li>
+						<!-- <li><a href="">blog</a></li> -->
+						<li>
+							<a href="#contact">contact</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="headerText wrapper">
+			<h3>Prologue:</h3>
+			<h1>natalie van dine</h1>
+			<p>web developer</p>
+			<p>educator</p>
+			<p>a11y</p>
+		</div>
 
-	<h1>HTML/CSS/JS Boilerplate</h1>
-	<p>Let's code!</p>
+	</header>
+	<!-- HEADER SECTION ENDS -->
 
-	<script src="public/scripts/main.js"></script>
+	<!-- MAIN BEGINS -->
+	<main>
+
+	<!-- PORTFOLIO section begins -->
+	<section class="portfolio" id="portfolio">
+		<h2>portfolio</h2>
+		<div class="gallery wrapper">
+			<div class="appImg appImg1">
+				<img src="assets/portfolioAC.png" alt="">
+			</div>
+			<div class="appText appText1">
+				<h3>Accessibility Checklist</h3>
+				<p class="appDesc">An educational flashcard application that encourages developers to consider and implement accessibility into their sites. </p>
+				<p class="appSkills">React &nbsp; javaScript &nbsp; Firebase &nbsp; HTML5 &nbsp; CSS3 &nbsp; responsive</p>
+				<div class="portfolioLinks">
+					<p><a href="">SEE LIVE</a></p>
+					<p><a href="">GITHUB</a></p>
+				</div>
+			</div>
+			<div class="appText appText2">
+				<h3>Apocalypse! The Game of Making Friends</h3>
+				<p class="appDesc">A javaScript game/quiz for making friends with literal arrays of objects.</p>
+				<p class="appSkills">javaScript &nbsp; jQuery &nbsp; HTML5 &nbsp; CSS3 </p>
+				<div class="portfolioLinks">
+					<p><a href="">SEE LIVE</a></p>
+					<p><a href="">GITHUB</a></p>
+				</div>
+			</div>
+			<div class="appImg appImg2">
+				<img src="assets/portfolioApoc.png" alt="mockup of Apocalypse project">
+			</div>
+			<div class="appImg appImg3">
+				<img src="assets/portfolioMeme.png" alt="mockup of project Can You Meme Better Than">
+			</div>
+			<div class="appText appText3">
+				<h3>Can You Meme Better Than....?</h3>
+				<p class="appDesc">Pulling from the GIPHY and favQuote APIs, this application pits a user-generate meme against the words of a famous thinker. </p>
+				<p class="appSkills">javaScript &nbsp; jQuery &nbsp; HTML5 &nbsp; CSS3 &nbsp; APIs &nbsp; teamwork</p>
+				<div class="portfolioLinks">
+					<p><a href="">SEE LIVE</a></p>
+					<p><a href="">GITHUB</a></p>
+				</div>
+			</div>
+			<div class="appText appText4">
+				<h3>Mischief Managed</h3>
+				<p class="appDesc">Using two APIs, this application sorts members of Hogwarts into their respective houses and displaying interesting data visualization charts. </p>
+				<p class="appSkills">React &nbsp; javaScript &nbsp; HTML5 &nbsp; CSS3 &nbsp; responsive &nbsp; APIs &nbsp; teamwork</p>
+				<div class="portfolioLinks">
+					<p><a href="">SEE LIVE</a></p>
+					<p><a href="">GITHUB</a></p>
+				</div>
+			</div>
+			<div class="appImg appImg4">
+				<img src="assets/portfolioHP.png" alt="">
+			</div>
+			<div class="appImg appImg5">
+				<img src="assets/portfolioOver.png" alt="mockup of flower shop psd conversion">
+			</div>
+			<div class="appText appText5">
+				<h3>PSD Conversion: flower store</h3>
+				<p class="appDesc">Fully responsive website converted from a provided PSD</p>
+				<p class="appSkills">HTML5 &nbsp; CSS3 &nbsp; responsive </p>
+				<div class="portfolioLinks">
+					<p><a href="https://over-psd-conversion.firebaseapp.com">SEE LIVE</a></p>
+					<p><a href="https://github.com/nvandine/over_psd_conversion">GITHUB</a></p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- PORTFOLIO section ends -->
+
+	<!-- ABOUT section begins -->
+	<section class="about">
+
+	</section>
+	<!-- ABOUT section ends -->
+
+	<!-- BLOG section begins -->
+	<!-- <section class="blog"> -->
+	<!-- Do I feature a blog post here and update it regularly? -->
+	<!-- </section> -->
+	<!-- BLOG section -->
+
+	<!-- CONTACT section begins -->
+	<section class="contact" id="contact">
+		<div class="map">
+			<!-- background image? -->
+		</div>
+		<div class="contactDetails">
+			<h3>contact details</h3>
+			<h4 class="location">Location:</h4>
+			<p>Toronto, Ontario</p>
+			<h4 class="email">E-mail:</h4>
+			<p>
+				<a href="">nat@natvandine.com</a>
+			</p>
+		</div>
+		<div class="contactImage1">
+
+		</div>
+		<div class="contactImage2">
+
+		</div>
+		<form method="POST" action="https://formspree.io/nat@natvandine.com">
+			<h3>get in touch</h3>
+			<label for="name" class="visuallyhidden">name</label>
+			<input type="text" name="name" placeholder="your name (required)" id="name">
+
+			<label for="email" class="visuallyhidden">email</label>
+			<input type="email" name="email" placeholder="your email (required)" id="email">
+
+			<label for="message" class="visuallyhidden">message</label>
+			<textarea name="message" placeholder="your message here" id="message" cols="28" rows="5"></textarea>
+
+			<label for="submit" class="visuallyhidden">submit message</label>
+			<button>send</button>
+
+		</form>
+		<div class="contactImage3">
+
+		</div>
+	</section>
+	<!-- CONTACT section ends -->
+
+	</main>
+	<!-- MAIN ENDS -->
+
+	<!-- FOOTER BEGINS -->
+	<footer>
+		<img src="assets/nvdlogo.png" alt="NVD logo">
+		<p class="footerText wrapper">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aperiam inventore ipsum magni esse quas libero eveniet
+			quo rem exercitationem. Nobis quis, officiis porro magni provident veniam temporibus ad, dolorem deserunt nam eligendi
+			architecto impedit voluptate itaque a eum.</p>
+		<nav>
+			<ul>
+				<li>
+					<a href="">LinkedIn</a>
+				</li>
+				<!-- <li>
+					<a href="">Medium</a>
+				</li> -->
+				<li>
+					<a href="">GitHub</a>
+				</li>
+				<li>
+					<a href="">Twitter</a>
+				</li>
+				<!-- <li>
+					<a href="">Tumblr</a>
+				</li> -->
+			</ul>
+		</nav>
+		<p class="copyright">&copy; 2018 Natalie Van Dine. All Rights Reserved</p>
+	</footer>
+	<!-- FOOTER ENDS -->
+
+	<script src="./public/scripts/main.js"></script>
 </body>
+
 </html>
