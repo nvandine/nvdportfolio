@@ -270,14 +270,16 @@ h2:after {
       flex-wrap: wrap; }
 
 .appImg {
+  margin: 0 10px;
   padding: 30px;
-  width: 58%;
+  width: calc(58% - 40px);
+  background-color: rgba(254, 247, 148, 0.3);
   -o-object-fit: cover;
      object-fit: cover; }
 
 .appText {
-  margin: 30px 0;
-  width: 41%;
+  margin: 30px 10px;
+  width: calc(41% - 40px);
   background-color: #e1f7fa;
   border: 1px solid #025f53;
   padding: 30px 40px; }
@@ -310,6 +312,73 @@ h2:after {
               box-shadow: 3px 3px 3px #8d8989; }
       .appText .portfolioLinks p a {
         color: #e1f7fa; }
+
+.aboutGallery {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "gridA gridB gridC gridC"  "gridD gridD gridE gridF" "gridG gridH gridI gridF"; }
+  .aboutGallery h3 {
+    padding: 15px 0; }
+  .aboutGallery p {
+    padding: 15px 0; }
+
+.iconGallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  .iconGallery i {
+    font-size: 120px;
+    margin: 15px; }
+
+.me {
+  padding: 20px; }
+  .me h3 {
+    padding: 15px 0; }
+
+.aboutGalleryItem:first-child {
+  grid-area: gridA;
+  background-image: url("../../../assets/HP-stylized.jpg");
+  background-position: center;
+  background-size: cover; }
+
+.aboutGalleryItem:nth-child(2) {
+  grid-area: gridB; }
+
+.aboutGalleryItem:nth-child(3) {
+  grid-area: gridC;
+  background-image: url("../../../assets/Apoc-stylized.png");
+  background-position: center;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+.aboutGalleryItem:nth-child(4) {
+  grid-area: gridD;
+  background-image: url("../../../assets/AClist-stylized.jpg");
+  background-position: center;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+.aboutGalleryItem:nth-child(5) {
+  grid-area: gridE; }
+
+.aboutGalleryItem:nth-child(6) {
+  grid-area: gridF; }
+
+.aboutGalleryItem:nth-child(7) {
+  grid-area: gridG; }
+
+.aboutGalleryItem:nth-child(8) {
+  grid-area: gridH; }
+
+.aboutGalleryItem:last-child {
+  grid-area: gridI; }
 
 .contact {
   display: -webkit-box;

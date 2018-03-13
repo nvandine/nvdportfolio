@@ -24,16 +24,17 @@ h2:after {
 }
 
 .appImg {
+    margin: 0 10px;
     padding: 30px;
-    width: 58%;
+    width: calc(58% - 40px);
     // border: 3px solid $accent3;
-    // background-color: $accent4;
+    background-color: rgba(254, 247, 148, 0.3);
     object-fit: cover;
 }
 
 .appText {
-    margin: 30px 0;
-    width: 41%;
+    margin: 30px 10px;
+    width: calc(41% - 40px);
     background-color: $accent1;
     border: 1px solid $tertiary;
     padding: 30px 40px;
