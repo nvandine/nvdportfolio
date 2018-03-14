@@ -51,6 +51,15 @@ h1 {
 
 h2 {
 	font-size: 3rem;
+	padding: 30px 0;
+}
+
+h2:after {
+	margin-top: 10px;
+	border-bottom: 1px solid $primary;
+	content: '';
+	display: block;
+	width: 100%;
 }
 
 h3 {
@@ -62,9 +71,13 @@ h4 {
 	margin: 15px 0;
 }
 
+h5 {
+	font-size: 1.8rem;
+}
+
 .wrapper {
 	max-width: 1000px;
-	max-width: 90%;
+	max-width: 85%;
 	margin: 0 auto;
 }
 

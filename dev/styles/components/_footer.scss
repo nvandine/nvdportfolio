@@ -13,8 +13,9 @@ footer {
         width: 150px;
     }
     p {
-        margin: 10px 0 40px;
+        margin: 15px 0 10px;
         line-height: 1.5;
+        color: $quaternary;
     }
     a {
         border: 1px solid $tertiary;
@@ -24,7 +25,8 @@ footer {
 }
 
 .footerText {
-    width: 60%;
+    width: 65%;
+    margin-bottom: 20px;
 }
 
 

@@ -1,79 +1,53 @@
-.aboutGallery {
-    display: grid;
-    grid-gap: 15px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-        "gridA gridB gridC gridC" 
-        "gridD gridD gridE gridF"
-        "gridG gridH gridI gridF";
-        h3 {
-            padding: 15px 0;
-        }
-        p {
-            padding: 15px 0;
-        }
+.about {
+    @include flexCol;
+    margin: 30px 0;
+}
+
+.skills {
+    @include flexCol;
+    max-width: 80%;
+    margin-bottom: 30px;
+    h4 {
+        margin: 50px auto;
+    }
 }
 
 .iconGallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     i {
-        font-size: 120px;
-        margin: 15px;
+        font-size: 100px;
+        color: $tertiary;
+        margin: 10px 25px;
     }
+    img {
+        width: 150px;
+        margin: 10px 25px;
+    }
+}
+
+.meStuff {
+    display: flex;
 }
 
 .me {
-    padding: 20px;
-    h3 {
-        padding: 15px 0;
+    margin: 0 30px 0 0;
+    line-height: 1.5;
+    p {
+        margin-bottom: 20px;
+        color: $quaternary;
     }
 }
 
-.aboutGalleryItem:first-child {
-    grid-area: gridA;
-    background-image: url("../../../assets/HP-stylized.jpg");
-    background-position: center;
-    background-size: cover;
+.aboutPoints {
+    margin: 0 20px;
+    color: $quaternary;
+    p {
+    margin: 15px 0;
+    color: $secondary;
+    }
 }
 
-.aboutGalleryItem:nth-child(2) {
-    grid-area: gridB;
-}
 
-.aboutGalleryItem:nth-child(3) {
-    grid-area: gridC;
-    background-image: url('../../../assets/Apoc-stylized.png');
-    background-position: center;
-    background-size: cover;
-    object-fit: cover;
-}
-
-.aboutGalleryItem:nth-child(4) {
-    grid-area: gridD;
-    background-image: url("../../../assets/AClist-stylized.jpg");
-    background-position: center;
-    background-size: cover;
-    object-fit: cover;
-}
-
-.aboutGalleryItem:nth-child(5) {
-    grid-area: gridE;
-}
-
-.aboutGalleryItem:nth-child(6) {
-    grid-area: gridF;
-}
-
-.aboutGalleryItem:nth-child(7) {
-    grid-area: gridG;
-}
-
-.aboutGalleryItem:nth-child(8) {
-    grid-area: gridH;
-}
-
-.aboutGalleryItem:last-child {
-    grid-area: gridI;
-}
