@@ -86,7 +86,11 @@ h5 {
 /* Portrait tablet and small desktops */
 
 @media (max-width: 940px) {
-
+	.iconGallery {
+		i {
+			margin: 15px 25px;
+		}
+	}
 }
 
 /* Landscape phone to portrait tablet */

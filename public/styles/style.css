@@ -266,7 +266,7 @@ header {
   width: 40%;
   background-color: rgba(240, 231, 222, 0.425);
   border: 1px solid #025f53;
-  padding: 30px 40px; }
+  padding: 40px 30px; }
   .appText h3 {
     margin-top: 10px; }
   .appText h3:after {
@@ -543,6 +543,10 @@ h5 {
 
 /* MEDIA QUERIES */
 /* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  .iconGallery i {
+    margin: 15px 25px; } }
+
 /* Landscape phone to portrait tablet */
 /* Portrait phones and down */
 /* Tiny phones */
