@@ -33,10 +33,16 @@ li {
 
 a {
 	text-decoration: none;
+	color: $basefont;
 }
 
-a:visited {
+.headerNav a:visited {
 	text-decoration: none;
+	
+}
+
+.headerNav a {
+	color: dodgerblue;
 }
 
 h1 {
@@ -58,5 +64,32 @@ h4 {
 
 .wrapper {
 	max-width: 1000px;
+	max-width: 90%;
 	margin: 0 auto;
+}
+
+/* MEDIA QUERIES */
+
+/* Portrait tablet and small desktops */
+
+@media (max-width: 940px) {
+
+}
+
+/* Landscape phone to portrait tablet */
+
+@media (max-width: 767px) {
+	
+}
+
+/* Portrait phones and down */
+
+@media (max-width: 480px) {
+
+}
+
+/* Tiny phones */
+
+@media (max-width: 320px) {
+	
 }

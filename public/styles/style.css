@@ -148,14 +148,10 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   padding: 0; }
 
 header {
-  background-image: url("../../assets/iceberg.png");
+  background-image: url("../../../assets/torontoMap.jpg");
   background-position: center;
   background-size: cover;
   height: 100vh; }
-
-.headerOverlay {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(254, 247, 148, 0.3)), to(rgba(225, 247, 250, 0.3)));
-  background-image: linear-gradient(to right, rgba(254, 247, 148, 0.3), rgba(225, 247, 250, 0.3)); }
 
 .headerTop {
   display: -webkit-box;
@@ -178,28 +174,31 @@ header {
   .headerTop img {
     width: 100px;
     margin: 20px 0 15px 0; }
-  .headerTop nav ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    .headerTop nav ul li {
-      margin: 10px 30px; }
-      .headerTop nav ul li:hover,
-      .headerTop nav ul li:focus .headerTop nav ul li:active {
-        border-top: 1px solid #271818;
-        content: '';
-        display: block;
-        text-shadow: -3px 0px 3px #fef794, 3px 0px 3px #fef794, 6px 0px 6px #fef794, -6px 0px 6px #fef794; }
+
+.headerTop nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .headerTop nav ul li {
+    margin: 10px 0px 10px 30px;
+    border: 1px solid transparent; }
+    .headerTop nav ul li:hover,
+    .headerTop nav ul li:focus .headerTop nav ul li:active {
+      border-top: 1px solid #271818;
+      content: '';
+      display: block; }
+    .headerTop nav ul li a {
+      border: 1px solid none; }
 
 .headerText {
   height: 35vh;
@@ -213,17 +212,16 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start; }
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
   .headerText h3 {
     padding: 100px 0 5px 0; }
   .headerText h1 {
     padding: 15px 0 20px 0; }
   .headerText p {
     padding: 12px 0;
-    color: #8d8989;
-    text-shadow: -3px 0px 3px #fef794, 3px 0px 3px #fef794, 6px 0px 6px #fef794, -6px 0px 6px #fef794; }
+    color: #8d8989; }
 
 .portfolio {
   display: -webkit-box;
@@ -242,8 +240,7 @@ header {
   margin: 30px 0; }
 
 h2 {
-  padding: 30px 0;
-  text-shadow: -3px 0px 3px #fef794, 3px 0px 3px #fef794, 6px 0px 6px #fef794, -6px 0px 6px #fef794; }
+  padding: 30px 0; }
 
 h2:after {
   margin-top: 10px;
@@ -307,9 +304,7 @@ h2:after {
       width: auto;
       background-color: #403a3a;
       border-radius: 5px;
-      margin-right: 15px;
-      -webkit-box-shadow: 3px 3px 3px #8d8989;
-              box-shadow: 3px 3px 3px #8d8989; }
+      margin-right: 15px; }
       .appText .portfolioLinks p a {
         color: #e1f7fa; }
 
@@ -506,10 +501,14 @@ li {
   list-style: none; }
 
 a {
+  text-decoration: none;
+  color: "PT Mono", monospace; }
+
+.headerNav a:visited {
   text-decoration: none; }
 
-a:visited {
-  text-decoration: none; }
+.headerNav a {
+  color: dodgerblue; }
 
 h1 {
   font-size: 4rem; }
@@ -526,4 +525,11 @@ h4 {
 
 .wrapper {
   max-width: 1000px;
+  max-width: 90%;
   margin: 0 auto; }
+
+/* MEDIA QUERIES */
+/* Portrait tablet and small desktops */
+/* Landscape phone to portrait tablet */
+/* Portrait phones and down */
+/* Tiny phones */
