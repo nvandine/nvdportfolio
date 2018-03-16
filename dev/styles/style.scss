@@ -83,6 +83,21 @@ h5 {
 
 /* MEDIA QUERIES */
 
+
+@media (max-width: 1100px) {
+
+	.contactDetails {
+		width: 30%;
+	}
+	.contactImage1 {
+		width: 13%;
+	}
+
+	.footerText, .detail, .copyright {
+		font-size: 1.5rem;
+	}
+}
+
 /* Portrait tablet and small desktops */
 
 @media (max-width: 940px) {
@@ -96,17 +111,150 @@ h5 {
 /* Landscape phone to portrait tablet */
 
 @media (max-width: 767px) {
+	.portfolioGallery{
+		.app1{
+			order: -1;
+		}
+		.app2{
+			order: 0;
+		}
+		.app3{
+			order: 2;
+		}
+		.app4{
+			order: 1;
+		}
+		.app5{
+			order: 3;
+		}
+		.app6{
+			order: 4;
+		}
+		.app7{
+			order: 6;
+		}
+		.app8{
+			order: 5;
+		}
+		.appImage{
+			width: 80%;
+		}
+	}
+	.appText {
+		width: 70%;
+	}
 	
+	.meStuff {
+		flex-direction: column;
+	}
+
+	.me {
+		width: 100%;
+		margin: 0 20px;
+		p {
+			font-size: 1.4rem;
+		}
+	}
+	
+	.aboutPoints {
+		width: 100%;
+		margin: 20px;
+		p {
+			font-size: 1.4rem;
+		}
+	}
+
+	.iconGallery {
+		max-width: 100%;
+	}
+
+	// .map {
+	// 	width: 0%;
+	// }
+	.contact {
+		max-width: 95%;
+	}
+
+	.contactDetails {
+		width: 90%;
+		@include flex;
+		h3 {
+			display: none;
+		}
+		.location, .email {
+			margin: 0 15px;
+		}
+	}
+	
+
+	.contactImage1 {
+		display: none;
+	}
+	.footerText {
+		width: 80%;
+	}
 }
 
 /* Portrait phones and down */
 
 @media (max-width: 480px) {
+	.wrapper {
+		max-width: 90%;
+	}
 
+	.headerTop {
+		@include flexCol;
+
+	}
+
+	.headerTop nav ul {
+		justify-content: space-around;
+		li {
+			margin: 10px 15px;
+
+		}
+	}
+
+	.headerText {
+		align-items: center;
+	}
+
+	.appText {
+		width: 90%;
+	}
+
+	.locEmail {
+		@include flex;
+	}
+
+	footer {
+		nav ul {
+			li {
+				margin: 8px;
+			}
+		}
+	}
+	.footerText {
+		text-align: left;
+		font-size: 1.2rem;
+	}
+
+	.detail,
+	.copyright {
+		font-size: 1.2rem;
+		text-align: center;
+	}
 }
 
 /* Tiny phones */
 
-@media (max-width: 320px) {
-	
+@media (max-width: 424px) {
+	.headerText {
+		h1, p {
+			text-align: center;
+		}
+		span {
+			display: block;
+		}
+	}
 }

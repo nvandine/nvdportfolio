@@ -223,6 +223,8 @@ header {
   .headerText p {
     padding: 12px 0;
     color: #8d8989; }
+  .headerText span {
+    display: inline-block; }
 
 .portfolio {
   display: -webkit-box;
@@ -255,16 +257,17 @@ header {
       -ms-flex-align: center;
           align-items: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1; }
+      flex-wrap: wrap; }
+  .portfolioGallery .appImage {
+    margin: 30px;
+    display: block;
+    width: 40%; }
 
 .appText {
   min-height: 400px;
   margin: 30px 10px;
-  width: 40%;
-  background-color: rgba(240, 231, 222, 0.425);
+  width: 46%;
+  background-color: rgba(216, 237, 240, 0.425);
   border: 1px solid #025f53;
   padding: 40px 30px; }
   .appText h3 {
@@ -328,9 +331,10 @@ header {
   max-width: 80%;
   margin-bottom: 30px; }
   .skills h4 {
-    margin: 50px auto; }
+    margin: 50px 0 30px; }
 
 .iconGallery {
+  max-width: 75%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -341,29 +345,34 @@ header {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  margin-bottom: 15px; }
   .iconGallery i {
-    font-size: 100px;
+    font-size: 60px;
     color: #025f53;
-    margin: 10px 25px; }
-  .iconGallery img {
-    width: 150px;
     margin: 10px 25px; }
 
 .meStuff {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  padding: 10px; }
 
 .me {
+  width: 60%;
   margin: 0 30px 0 0;
-  line-height: 1.5; }
+  padding: 20px;
+  line-height: 1.5;
+  background-color: rgba(204, 221, 239, 0.425); }
   .me p {
     margin-bottom: 20px;
     color: #403a3a; }
 
 .aboutPoints {
+  padding: 20px;
+  width: 30%;
   margin: 0 20px;
+  background-color: rgba(216, 237, 240, 0.425);
   color: #403a3a; }
   .aboutPoints p {
     margin: 15px 0;
@@ -394,48 +403,11 @@ header {
     display: block;
     width: 50%; }
   .contactDetails p a {
-    color: #271818; }
+    color: dodgerblue; }
 
 .contactImage1 {
   background-color: #CCDDEF;
   width: 20.5%; }
-
-.contactImage2 {
-  background-color: #CCDDEF;
-  width: 20.6%; }
-
-.contactImage3 {
-  background-color: #d8edf0;
-  width: 43%; }
-
-form {
-  font-size: 1.4rem;
-  width: 36.4%;
-  padding: 42px 40px; }
-  form h3 {
-    margin: 15px; }
-  form h3:after {
-    margin-top: 10px;
-    border-bottom: 1px solid #271818;
-    content: '';
-    display: block;
-    width: 41%; }
-  form input {
-    margin: 10px;
-    padding: 10px;
-    width: 290px; }
-  form textarea {
-    margin: 15px;
-    padding: 10px; }
-  form button {
-    margin: 15px;
-    padding: 10px;
-    background-color: #f0e7de;
-    width: 290px;
-    border: none;
-    color: dodgerblue;
-    text-transform: uppercase;
-    font-size: 2rem; }
 
 footer {
   display: -webkit-box;
@@ -450,7 +422,8 @@ footer {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  margin-top: 15px; }
   footer nav ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -542,11 +515,156 @@ h5 {
   margin: 0 auto; }
 
 /* MEDIA QUERIES */
+@media (max-width: 1100px) {
+  .contactDetails {
+    width: 30%; }
+  .contactImage1 {
+    width: 13%; }
+  .footerText, .detail, .copyright {
+    font-size: 1.5rem; } }
+
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
   .iconGallery i {
     margin: 15px 25px; } }
 
 /* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .portfolioGallery .app1 {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1; }
+  .portfolioGallery .app2 {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0; }
+  .portfolioGallery .app3 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2; }
+  .portfolioGallery .app4 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1; }
+  .portfolioGallery .app5 {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3; }
+  .portfolioGallery .app6 {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4; }
+  .portfolioGallery .app7 {
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6; }
+  .portfolioGallery .app8 {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5; }
+  .portfolioGallery .appImage {
+    width: 80%; }
+  .appText {
+    width: 70%; }
+  .meStuff {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .me {
+    width: 100%;
+    margin: 0 20px; }
+    .me p {
+      font-size: 1.4rem; }
+  .aboutPoints {
+    width: 100%;
+    margin: 20px; }
+    .aboutPoints p {
+      font-size: 1.4rem; }
+  .iconGallery {
+    max-width: 100%; }
+  .contact {
+    max-width: 95%; }
+  .contactDetails {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .contactDetails h3 {
+      display: none; }
+    .contactDetails .location, .contactDetails .email {
+      margin: 0 15px; }
+  .contactImage1 {
+    display: none; }
+  .footerText {
+    width: 80%; } }
+
 /* Portrait phones and down */
+@media (max-width: 480px) {
+  .wrapper {
+    max-width: 90%; }
+  .headerTop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .headerTop nav ul {
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+    .headerTop nav ul li {
+      margin: 10px 15px; }
+  .headerText {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .appText {
+    width: 90%; }
+  .locEmail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  footer nav ul li {
+    margin: 8px; }
+  .footerText {
+    text-align: left;
+    font-size: 1.2rem; }
+  .detail,
+  .copyright {
+    font-size: 1.2rem;
+    text-align: center; } }
+
 /* Tiny phones */
+@media (max-width: 424px) {
+  .headerText h1, .headerText p {
+    text-align: center; }
+  .headerText span {
+    display: block; } }

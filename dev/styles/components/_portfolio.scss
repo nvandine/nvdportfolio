@@ -6,15 +6,20 @@
 .portfolioGallery {
     @include flex;
     flex-wrap: wrap;
-    flex-grow: 1;
+    // flex-grow: 1;
+    .appImage {
+        margin: 30px;
+        display: block;
+        width: 40%;
+    }
 }
 
 
 .appText {
     min-height: 400px;
     margin: 30px 10px;
-    width: 40%;
-    background-color: rgba(240, 231, 222, 0.425);
+    width: 46%;
+    background-color: rgba(216, 237, 240, 0.425);
     border: 1px solid $tertiary;
     padding: 40px 30px;
     h3 {

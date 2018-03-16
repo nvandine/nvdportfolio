@@ -1,13 +1,19 @@
 "use strict";
 
-var app = {};
+$(document).ready(function () {
 
-app.events = function () {};
+				//Scroll Magic
+				var controller = new ScrollMagic.Controller();
 
-app.init = function () {
-    app.events();
-};
+				var scrollMagicScene = function scrollMagicScene(elementID, classToAdd) {
+								var newScene = new ScrollMagic.Scene({
+												triggerElement: elementID,
+												offset: -250
+								}).setClassToggle(elementID, classToAdd).addTo(controller);
+				};
 
-$(function () {
-    app.init();
+				scrollMagicScene("#appText1", "piece-fade-in");
+				scrollMagicScene("#appText2", "fadeIn");
+				scrollMagicScene("#appText3", "fadeIn");
+				scrollMagicScene("#appText4", "fadeIn");
 });

@@ -1,5 +1,6 @@
 footer {
     @include flexCol;
+    margin-top: 15px;
     nav  ul{
         @include flex;
         justify-content: space-around;

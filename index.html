@@ -23,7 +23,7 @@
 			<nav class="headerNav">
 				<ul>
 					<li>
-						<a href="#">home</a>
+						<a href="#"></a>
 					</li>
 					<li>
 						<a href="#portfolio">portfolio</a>
@@ -40,10 +40,8 @@
 		</div>
 		<div class="headerText wrapper">
 			<h3>Prologue:</h3>
-			<h1>natalie van dine</h1>
-			<p>web developer</p>
-			<p>educator</p>
-			<p>a11y</p>
+			<h1>natalie <span>van dine</span></h1>
+			<p>web developer &#9672; educator &#9672; a11y</p>
 		</div>
 
 	</header>
@@ -56,7 +54,7 @@
 	<section class="portfolio" id="portfolio">
 		<h2>portfolio</h2>
 		<div class="portfolioGallery wrapper">
-			<div class="appText appText1">
+			<div class="appText app1" id="appText1">
 				<h3>Accessibility Flashcards & Checklist</h3>
 				<p class="appDesc">An educational flashcard application that encourages developers to consider and implement accessibility into their sites. Use it to learn and/or as a project checklist.</p>
 				<p class="appSkills">React &nbsp; javaScript &nbsp; Firebase &nbsp; HTML5 &nbsp; CSS3 &nbsp; responsive</p>
@@ -65,7 +63,9 @@
 					<p><a href="https://github.com/nvandine/project_five" target="_blank">GITHUB</a></p>
 				</div>
 			</div>
-			<div class="appText appText2">
+			<a href="https://acessibility-cl.firebaseapp.com" target="_blank" class="appImage app2"><img src="assets/AC-border.png" alt="stylized image of the Accessibility Checklist main page"></a>
+			<a href="https://apocalypse-friends.firebaseapp.com" target="_blank" class="appImage app3"><img src="assets/Apoc-border.png" alt="image of Apocalypse main page"></a>
+			<div class="appText app4" id="appText2">
 				<h3>Apocalypse! The Game of Making Friends</h3>
 				<p class="appDesc">How long would you last in the apocalypse? Take this quiz and trust your instincts. Your choices matter, but javaScript is doing all the calculations behind-the-scenes.</p>
 				<p class="appSkills">javaScript &nbsp; jQuery &nbsp; HTML5 &nbsp; CSS3 & responsive</p>
@@ -74,7 +74,7 @@
 					<p><a href="https://github.com/nvandine/project_three" target="_blank">GITHUB</a></p>
 				</div>
 			</div>
-			<div class="appText appText3">
+			<div class="appText app5"  id="appText3">
 				<h3>Can You Meme Better Than...?</h3>
 				<p class="appDesc">Pulling from the GIPHY and Quote of the Day APIs, this application pits a user-generated meme (that's you) against the words of a famous thinker. Possibly NSFW. </p>
 				<p class="appSkills">javaScript &nbsp; jQuery &nbsp; HTML5 &nbsp; CSS3 &nbsp; APIs &nbsp; teamwork</p>
@@ -83,7 +83,9 @@
 					<p><a href="https://github.com/team-brickwall/Meme-better-than" target="_blank">GITHUB</a></p>
 				</div>
 			</div>
-			<div class="appText appText4">
+			<a href="https://team-brickwall.github.io/Meme-better-than/" target="_blank" class="appImage app6"><img src="assets/meme-border.png" alt="stylized image of Meme app main page"></a>
+			<a href="https://mischiefmanaged-7667c.firebaseapp.com/" target="_blank" class="appImage app7"><img src="assets/HP-border.png" alt="stylized image of Mischief Managed main page"></a>
+			<div class="appText app8" id="appText4">
 				<h3>Mischief Managed - from data to DADA </h3>
 				<p class="appDesc">Using the Harry Potter and Fanwiki APIs, this application sorts members of Hogwarts into their respective houses and displays interesting data visualization charts. </p>
 				<p class="appSkills">React &nbsp; javaScript &nbsp; HTML5 &nbsp; CSS3 &nbsp; responsive &nbsp; APIs &nbsp; teamwork</p>
@@ -98,10 +100,10 @@
 
 	<!-- ABOUT section begins -->
 	<section class="about wrapper" id="about"> 
-		<h2>About Me</h2>
+		<h2>about me</h2>
 		<div class="meStuff">
 			<div class="me">
-				<p>Who am I? I am a developer, a connector, a researcher. I am not: a tylenol, a chair, a water bottle. </p>
+				<p>Who am I? I am a web developer, a connector, a researcher. I am not: a tylenol, a chair, a water bottle.</p>
 				<p>I'm looking to find a position as a web developer, while maintaining my educational and program development background to mentor future coders of all ages, experience and background. I'm really into accessibility.</p>
 				<p>I have a preternatural amount of energy, which I expend in excellent ways: I love long-distance cycling and cross-country skiing, supporting and occasionally participating in Toronto's arts, theatre and comedy scene. I have built three spaceships (for films; they don't work.... yet). If I am sitting down I'm probably reading.</p>
 			</div>
@@ -122,14 +124,14 @@
 				<i class="devicon-html5-plain"></i>
 				<i class="devicon-css3-plain"></i>
 				<i class="devicon-javascript-plain"></i>
-				<i class=<i class="devicon-jquery-plain-wordmark"></i>
+				<i class="devicon-jquery-plain-wordmark"></i>
 				<i class="devicon-sass-original"></i>
 				<i class="devicon-gulp-plain"></i>
 				<i class="devicon-git-plain"></i>
 				<i class="devicon-github-plain"></i>
 				<i class="devicon-react-original"></i>
 				<i class="devicon-visualstudio-plain"></i>
-				<img src="assets/responsive.png" alt="">
+				<!-- <img src="assets/responsive.png" alt=""> -->
 			</div>  
 		</div> 
 	</section>
@@ -148,17 +150,23 @@
 		</div>
 		<div class="contactDetails">
 			<h3>contact details</h3>
-			<h4 class="location">Location:</h4>
-			<p>Toronto, Ontario</p>
-			<h4 class="email">E-mail:</h4>
-			<p>
-				<a href="mailto:nat@natvandine.com">nat@natvandine.com</a>
-			</p>
+			<div class="locEmail">
+				<div class="location">
+					<h4>Location:</h4>
+					<p>Toronto, Ontario</p>
+				</div>
+				<div  class="email">
+					<h4>E-mail:</h4>
+					<p>
+					<a href="mailto:nat@natvandine.com">nat@natvandine.com</a>
+					</p>
+				</div>
+			</div>
 		</div>
 		<div class="contactImage1">
-
+			
 		</div>
-		<div class="contactImage2">
+		<!-- <div class="contactImage2">
 
 		</div>
 		<form method="POST" action="https://formspree.io/nat@natvandine.com">
@@ -178,7 +186,7 @@
 		</form>
 		<div class="contactImage3">
 
-		</div>
+		</div> -->
 	</section>
 	<!-- CONTACT section ends -->
 
@@ -189,7 +197,7 @@
 	<footer>
 		<img src="assets/nvdlogo.png" alt="NVD logo">
 		<p class="footerText">Have you ever wondered if Kool-Aid Man &mdash; a giant, sentient glass jug &mdash; would actually be able to bust through a brick wall? If you take a standard jug and scale it to approximately 6 feet tall, the thickness of the jug would be around 3.6 inches, practically unbreakable. He would, however, crack. And if the Kool-Aid inside is his lifeblood, he would lose just enough from the impact to be pretty tired. So yeah, he could break through the wall, but he wouldn't have the energy to say "Oh Yeah!".</p> 
-		<p>	See? Meticulous attention to detail.</p>
+		<p class="detail">	See? Meticulous attention to detail.</p>
 		<nav>
 			<ul>
 				<li>
@@ -212,7 +220,7 @@
 		<p class="copyright">&copy; 2018 Natalie Van Dine. All Rights Reserved</p>
 	</footer>
 	<!-- FOOTER ENDS -->
-
+	<script src="public/scripts/scrollMagic/scrollmagic/minified/ScrollMagic.min.js"></script>
 	<script src="./public/scripts/main.js"></script>
 </body>
 

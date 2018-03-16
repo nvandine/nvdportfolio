@@ -31,13 +31,16 @@ header {
     }
 }
 
+// .home {
+//     display: none;
+// }
+
 .headerText {
     height: 35vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    
     h3 {
         padding: 100px 0 5px 0;
         color: $secondary;
@@ -48,5 +51,8 @@ header {
     p {
         padding: 12px 0;
         color: $secondary;
+    }
+    span {
+        display: inline-block;
     }
 }

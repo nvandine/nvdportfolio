@@ -1,5 +1,4 @@
 .contact {
-    // height: 100vh; // width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
@@ -26,7 +25,7 @@
         width: 50%;
     }
     p a {
-        color: $primary;
+        color: dodgerblue;
     }
 }
 
@@ -35,47 +34,47 @@
     width: 20.5%;
 }
 
-.contactImage2 {
-    background-color: $accent4;
-    width: 20.6%;
-}
+// .contactImage2 {
+//     background-color: $accent4;
+//     width: 20.6%;
+// }
 
-.contactImage3 {
-    background-color: $accent3;
-    width: 43%;
-}
+// .contactImage3 {
+//     background-color: $accent3;
+//     width: 43%;
+// }
 
-form {
-    font-size: 1.4rem;
-    width: 36.4%;
-    padding: 42px 40px;
-    h3 {
-        margin: 15px;
-    }
-    h3:after {
-        margin-top: 10px;
-        border-bottom: 1px solid $primary;
-        content: '';
-        display: block;
-        width: 41%;
-    }
-    input {
-        margin: 10px;
-        padding: 10px;
-        width: 290px;
-    }
-    textarea {
-        margin: 15px;
-        padding: 10px;
-    }
-    button {
-        margin: 15px;
-        padding: 10px;
-        background-color: $accent1;
-        width: 290px;
-        border: none;
-        color: dodgerblue;
-        text-transform: uppercase;
-        font-size: 2rem;
-    }
-}
+// form {
+//     font-size: 1.4rem;
+//     width: 36.4%;
+//     padding: 42px 40px;
+//     h3 {
+//         margin: 15px;
+//     }
+//     h3:after {
+//         margin-top: 10px;
+//         border-bottom: 1px solid $primary;
+//         content: '';
+//         display: block;
+//         width: 41%;
+//     }
+//     input {
+//         margin: 10px;
+//         padding: 10px;
+//         width: 290px;
+//     }
+//     textarea {
+//         margin: 15px;
+//         padding: 10px;
+//     }
+//     button {
+//         margin: 15px;
+//         padding: 10px;
+//         background-color: $accent1;
+//         width: 290px;
+//         border: none;
+//         color: dodgerblue;
+//         text-transform: uppercase;
+//         font-size: 2rem;
+//     }
+// }
