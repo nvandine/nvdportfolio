@@ -149,16 +149,16 @@ h5 {
 	}
 
 	.me {
-		width: 100%;
-		margin: 0 20px;
+		width: 95%;
+		margin: 0px 2.5% 20px;
 		p {
 			font-size: 1.4rem;
 		}
 	}
 	
 	.aboutPoints {
-		width: 100%;
-		margin: 20px;
+		width: 95%;
+		margin: 0 2.5%;
 		p {
 			font-size: 1.4rem;
 		}
@@ -176,13 +176,18 @@ h5 {
 	}
 
 	.contactDetails {
+		border: 1px solid $tertiary;
+		margin: 0 auto;
 		width: 90%;
 		@include flex;
 		h3 {
-			display: none;
+			padding: 0 20px;;
+		}
+		span {
+			display: block;
 		}
 		.location, .email {
-			margin: 0 15px;
+			margin: 0 20px;
 		}
 	}
 	
@@ -223,9 +228,15 @@ h5 {
 		width: 90%;
 	}
 
-	.locEmail {
-		@include flex;
+	.contactDetails {
+		@include flexCol;
+		h3 {
+			margin: none;
+		}
 	}
+	// .locEmail {
+	// 	@include flex;
+	// }
 
 	footer {
 		nav ul {
